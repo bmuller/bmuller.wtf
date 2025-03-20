@@ -4,6 +4,10 @@ title: bmuller wtf
 theme: ["PaperMod"]
 enableRobotsTXT: true
 
+caches:
+  images:
+    dir: :cacheDir/images
+
 menu:
   main:
   - identifier: home
