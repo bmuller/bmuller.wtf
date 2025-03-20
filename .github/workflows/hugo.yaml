@@ -61,7 +61,7 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --baseURL "http://bmuller.wtf/" \
+            --baseURL "https://bmuller.wtf/" \
             --cacheDir "${{ runner.temp }}/hugo_cache"
       - name: Cache Save
         id: cache-save
