@@ -1,0 +1,35 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1, h2 {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+div.entry-content a:hover {
+    text-decoration: underline;
+}
+
+div.entry-content a.badgelink {
+    border: 1px solid var(--tertiary);
+    padding: 4px;
+    align-items: center;
+    border-radius: 4px;
+}
+
+div.entry-content a.badgelink img {
+    display: inline-flex;
+    height: auto;
+    margin-right: 4px;
+}

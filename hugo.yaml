@@ -1,0 +1,41 @@
+baseURL: https://bmuller.wtf/
+languageCode: en-us
+title: bmuller wtf
+theme: ["PaperMod"]
+enableRobotsTXT: true
+
+menu:
+  main:
+  - identifier: home
+    name: Home
+    url: /
+    weight: 10
+  - identifier: posts
+    name: Blog
+    url: /posts/
+    weight: 20
+  - identifier: projects
+    name: Projects
+    url: /projects
+    weight: 30
+
+params:
+  footer:
+    hideCopyright: true
+
+  profileMode:
+    enabled: true
+
+  socialIcons:
+    - name: github
+      title: Profile on Github
+      url: "https://github.com/bmuller"
+    - name: X
+      title: Profile on X
+      url: "https://x.com/bmuller"
+    - name: linkedin
+      title: Profile on LinkedIn
+      url: "https://www.linkedin.com/in/bamuller/"
+    - name: googlescholar
+      title: Profile on LinkedIn
+      url: "https://scholar.google.com/citations?user=xMH2gUMAAAAJ&hl=en"
