@@ -1,0 +1,10 @@
+<div class="flex-container">
+  {{ range .Page.Params.projects }}
+  <div class="flex-item">
+    <h3><a target="_BLANK" href="{{ .url }}" target="_BLANK">{{ .name }}</a></h3>
+    <div>
+      {{ .desc }}
+    </div>  
+  </div>
+{{ end }}
+</div>

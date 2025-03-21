@@ -1,0 +1,20 @@
+<div class="flex-container">
+  {{ range (where .Page.Params.investments "type" .Params.type) }}
+  <div class="flex-item investment">
+    <div class="investment-logo">
+      <img src="/logos/{{ .logo }}" />
+    </div>
+    <h3><a target="_BLANK" href="{{ .url }}" target="_BLANK">{{ .name }}</a></h3>
+    <div>
+      {{ .desc }}
+    </div>  
+    {{ if .exit }}
+    <div class="exit">
+      <span>
+        <a href="{{ .exit }}">🚀 Exit</a>
+      </span>
+    </div>
+    {{ end }}
+  </div>
+{{ end }}
+</div>
