@@ -1,7 +1,9 @@
 ---
 title: "Bitboot: P2P Network Bootstrapping"
 date: 2016-08-05
-summary: "P2P network bootstrapping library"
+summary: "A P2P network bootstrapping library with no centralized server dependency"
+tags:
+  - projects
 ---
 > _TL;DR: [Bitboot](https://github.com/tintfoundation/bitboot) allows arbitrary groups of computers on the internet to find each other without any local dependencies and without setting up a central server.  It can be used to bootstrap new nodes on a p2p network or to simply find your other computer whose IP changes all the time._
 

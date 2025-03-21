@@ -51,6 +51,7 @@ div.flex-container div.flex-item {
     text-align: center;
     border-radius: 10px;
     border: 1px solid #ccc;
+    background: var(--entry);
 }
 
 div.flex-container div.flex-item div.exit span {
