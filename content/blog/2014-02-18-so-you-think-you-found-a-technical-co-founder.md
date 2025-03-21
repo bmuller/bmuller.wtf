@@ -4,7 +4,7 @@ date: 2014-02-18
 summary: 'Tips on evaluating a potential technical co-founder'
 ---
 
-> <b>Note:</b> This was written about a year before the startup mentioned [was acquired](https://www.ft.com/content/fa3f68a0-d957-11e4-a8f1-00144feab7de).
+> **Note:** This was written about a year before the startup mentioned [was acquired](https://www.ft.com/content/fa3f68a0-d957-11e4-a8f1-00144feab7de).
 
 A friend of mine is about to launch a new startup, and thinks he found a potential technical co-founder.  There's lots of advice for what to do if you're a non-technical person looking for a technical co-founder ([earn one](http://humbledmba.com/please-please-please-stop-asking-how-to-find), [stop looking](http://techcrunch.com/2012/04/15/stop-looking-for-a-technical-co-founder/), [date](http://founderdating.com/), [pay](http://www.cofounderslab.com/), [give up and learn to code](https://medium.com/startups-stuff/e4811a665284), [etc.](http://www.forbes.com/sites/stellafayman/2013/02/22/how-to-find-a-technical-cofounder/)).  It's not clear, though, what you should do when you think you've found that special someone to share in your [folie à deux](http://en.wikipedia.org/wiki/Folie_%C3%A0_deux).
 

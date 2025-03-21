@@ -7,9 +7,7 @@ summary: 'Retrospective lessons after a startup exit'
 
 After two years, right as we were getting into the swing of our first round of external financing, we were approached by [Vox Media](http://www.voxmedia.com).  Vox is one of the fastest growing media companies out there, and we have been huge fans of their work for a while.  They were serious, we listened, and eventually we came to this:
 
-> Vox buys datascience company OpBandit <a href="http://t.co/qH6R4NaipM">http://t.co/qH6R4NaipM</a>
->
-> &mdash; Financial Times (@FT) <a href="https://twitter.com/FT/status/585071420805361664">April 6, 2015</a>
+{{< x user="FT" id="585071420805361664" >}}
 
 Over the past two and a half years, we've learned countles lessons along the way.  Many of our assumptions and decisions turned out to be correct (from pure luck or the benevolence of the startup gods) - and some were way off.  Just so I never forget, here's a brief list of a few of them.
 
@@ -40,10 +38,7 @@ Alert on all bad things.  Automated alerts are best when they warn about bad thi
 There will always be more things on your TODO list than you will ever complete, so constant reassessment of prioritization is necessary.  Implicitly, it's some sort of ranking for all possible tasks
 `X` based on the probability of success `P(x_i = success)` times the utility value of the successful outcome `u(x_i)` divided by the commitment of time necessary `t(x_i)`, or
 
-
-<p className='bg-white flex p-3 justify-center'>
-<img src='/2016/equation.png' />
-</p>
+![](equation.png#center)
 
 Since neither `P` nor `t` are known, this equation is almost meaningless.  Good luck.
 
