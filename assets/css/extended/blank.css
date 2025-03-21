@@ -50,15 +50,15 @@ div.flex-container div.flex-item {
     padding: 20px;
     text-align: center;
     border-radius: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--border);
     background: var(--entry);
 }
 
 div.flex-container div.flex-item div.exit span {
-    border: 1px solid;
-    background: #ccc;
-    padding: 10px;
-    border-radius: 5px;
+    border: 1px solid var(--border);
+    background: #B9D9EB;
+    padding: 13px;
+    border-radius: var(--radius);
 }
 
 div.flex-container div.flex-item div.exit {
