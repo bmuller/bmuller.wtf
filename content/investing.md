@@ -57,7 +57,7 @@ params:
       type: fund      
 ---
 
-I'm an active angel investor, advisor, and venture fund LP.
+In addition to my investor affiliation with [Black Jays](https://blackjays.vc), I'm an active angel investor and startup advisor.
 
 ## Direct
 
@@ -71,6 +71,6 @@ I'm an active angel investor, advisor, and venture fund LP.
 
 {{< investments type=advisory >}}
 
-## Funds
+## Fund LP
 
 {{< investments type=fund >}}
