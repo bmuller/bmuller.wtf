@@ -2,6 +2,7 @@
 title: "Kademlia: A DHT in Python"
 date: 2014-02-14
 summary: An asynchronous Python library for the distributed hash table algorithm Kademlia.
+lastmod: 2025-03-28
 tags:
  - projects
 ---

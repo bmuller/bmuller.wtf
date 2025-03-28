@@ -1,6 +1,7 @@
 ---
 title: "Bitboot: P2P Network Bootstrapping"
 date: 2016-08-05
+lastmod: 2025-03-28
 summary: "A P2P network bootstrapping library with no centralized server dependency"
 tags:
   - projects

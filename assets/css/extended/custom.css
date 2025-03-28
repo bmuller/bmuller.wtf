@@ -26,6 +26,10 @@ div.social-icons a:hover {
     box-shadow: 0 1px;
 }
 
+div.post-meta span.lastmod, footer.entry-footer span.lastmod {
+    color: #aaa;
+}
+
 div.post-content a.badgelink {
     border: 1px solid var(--tertiary);
     padding: 1px 4px 1px 4px;
