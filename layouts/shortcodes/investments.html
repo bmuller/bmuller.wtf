@@ -1,6 +1,6 @@
-<div class="flex-container">
+<div class="investments-container">
   {{ range (where .Page.Params.investments "type" .Params.type) }}
-  <div class="flex-item investment">
+  <div class="investment">
     <div class="investment-logo">
       <img src="/logos/{{ .logo }}" />
     </div>

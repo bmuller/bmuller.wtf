@@ -43,15 +43,21 @@ params:
       logo: augie.png
       type: advisory
       desc: AugX Labs is an all-in-one video studio that empowers anyone to create video at scale.
-    - name: Treble
-      url: https://www.crunchbase.com/organization/treble-415d
-      logo: treble.jpg
-      type: fund
+    - name: Union Square Ventures
+      url: https://usv.com
+      logo: usv.jpg
+      type: fund      
     - name: Generalist Capital
       url: https://www.generalist.com/briefing/generalist-capital
       logo: generalist.png
       type: fund
+    - name: Treble
+      url: https://treble.vc
+      logo: treble.jpg
+      type: fund      
 ---
+
+I'm an active angel investor, advisor, and venture fund LP.
 
 ## Direct
 

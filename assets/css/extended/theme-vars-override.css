@@ -1,10 +1,11 @@
 :root {
-    --theme: rgb(245, 245, 245);
-    --primary: rgba(0, 0, 106, 0.88);
-    --secondary: rgba(0, 0, 0, 0.78);
-    --code-bg: #ccc;
+    --primary: rgba(76, 123, 150, 0.88);
+    --entry: #e5ddc8;
 }
 
+.dark {
+    --primary: rgba(76, 123, 150, 0.88);
+}
 
 /*
 :root {

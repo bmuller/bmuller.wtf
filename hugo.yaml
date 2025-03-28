@@ -3,7 +3,7 @@ languageCode: en-us
 title: bmuller wtf
 theme: ["PaperMod"]
 enableRobotsTXT: true
-
+pluralizeListTitles: false
 
 services:
   googleAnalytics:
@@ -44,6 +44,8 @@ menu:
 params:
   title: "bmuller wtf"
   description: "WTF is bmuller?"
+  hideFooter: true
+  ShowCodeCopyButtons: true
 
   social:
     twitter: bmuller
@@ -52,7 +54,7 @@ params:
     hideCopyright: true
 
   profileMode:
-    enabled: true
+    enabled: false
 
   socialIcons:
     - name: github

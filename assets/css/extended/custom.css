@@ -14,28 +14,37 @@ h1, h2, h3, h4 {
     font-variation-settings: "wdth" 100;
 }
 
-p {
-    margin-bottom: 1em;
+.post-content a:hover, div.social-icons a {
+    box-shadow: none;
 }
 
-div.entry-content a:hover {
-    text-decoration: underline;
+.post-content ul {
+    margin-left: 10px;
 }
 
-div.entry-content a.badgelink {
+div.social-icons a:hover {
+    box-shadow: 0 1px;
+}
+
+div.post-content a.badgelink {
     border: 1px solid var(--tertiary);
-    padding: 4px;
+    padding: 1px 4px 1px 4px;
     align-items: center;
     border-radius: 4px;
+    box-shadow: none;
 }
 
-div.entry-content a.badgelink img {
+div.post-content a.badgelink:hover {
+    border: 1px solid var(--theme);
+}
+
+div.post-content a.badgelink img {
     display: inline-flex;
     height: auto;
-    margin-right: 4px;
+    margin: 0 4px 0 0;
 }
 
-.flex-container {
+div.investments-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -45,8 +54,8 @@ div.entry-content a.badgelink img {
     align-items: flex-start;
 }
 
-div.flex-container div.flex-item {
-    flex: 1 1 300px; /* Responsive width */
+div.investments-container div.investment {
+    flex: 1 1 300px;
     padding: 20px;
     text-align: center;
     border-radius: 10px;
@@ -54,14 +63,17 @@ div.flex-container div.flex-item {
     background: var(--entry);
 }
 
-div.flex-container div.flex-item div.exit span {
-    border: 1px solid var(--border);
-    background: #B9D9EB;
-    padding: 13px;
-    border-radius: var(--radius);
+div.investments-container div.investment div.exit span a {
+    color: rgba(219, 31, 72, 0.88);
+    font-size: 1.2em;
+    box-shadow: none;
 }
 
-div.flex-container div.flex-item div.exit {
+div.investments-container div.investment div.exit span a:hover {
+    box-shadow: 0 1px;
+}
+
+div.investments-container div.investment div.exit {
     margin-top: 30px;
 }
 
