@@ -11,7 +11,7 @@ params:
       url: https://www.poppyflowers.com
       logo: poppy.png
       type: direct
-      desc: Poppy provids flowers for the big day, or just every day.
+      desc: Poppy provides flowers for the big day, or just every day.
     - name: Big Sugar Podcast
       url: https://podcasts.apple.com/us/podcast/big-sugar/id1707777341
       logo: big-sugar.jpg
