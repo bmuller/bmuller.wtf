@@ -3,7 +3,7 @@ title: What Next
 sitemap:
   disable: true
 cover:
-  image: carousel.jpg
+  image: signs.jpg
 # ShowToc: true
 
 ---
