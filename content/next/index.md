@@ -44,3 +44,5 @@ I enjoy each role type equally, and I don't have a preference for any over the o
 ## You
 
 Ideally, you're a company that is at a [Series A](https://www.ycombinator.com/library/Ek-stages-of-startups#series-a) stage or beyond looking for a technical leader with business and operational experience to take responsibility for a key part of your mission.  You have paying customers who love what you do for them.  Your valuation to revenue multiple is reasonable, or you pay exceptionally well.  Your company culture values employee agency, writing things down, working in the open, and encourages a bias for action (or needs help instituting / fostering one of these). Employees feel safe making mistakes, knowing the company will learn and adapt in a blameless way to increase the resiliency of systems and processes.  People leave meetings thinking their time was well spent.  Employees care about measuring (or at least understanding) the impact of their work on the company, customers, and overall market.
+
+*If you think we could be a match, reach out to bamuller on gmail and let's chat!*
