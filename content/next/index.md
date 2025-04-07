@@ -4,8 +4,9 @@ sitemap:
   disable: true
 cover:
   image: signs.jpg
-# ShowToc: true
-
+  relative: true
+params:
+  robotsNoIndex: true
 ---
 Hi there! 👋
 
