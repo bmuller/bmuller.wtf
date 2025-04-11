@@ -67,6 +67,10 @@ div.investments-container div.investment {
     background: var(--entry);
 }
 
+div.investments-container div.defunct-investment {
+    background: inherit;
+}
+
 div.investments-container div.investment div.exit span a {
     color: rgba(219, 31, 72, 0.88);
     font-size: 1.2em;

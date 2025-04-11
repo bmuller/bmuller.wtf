@@ -1,6 +1,6 @@
 <div class="investments-container">
   {{ range (where .Page.Params.investments "type" .Params.type) }}
-  <div class="investment">
+  <div class="investment {{ if .defunct }}defunct-investment{{ end }}">
     <div class="investment-logo">
       <img src="/logos/{{ .logo }}" />
     </div>
