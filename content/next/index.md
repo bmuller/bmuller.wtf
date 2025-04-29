@@ -16,7 +16,7 @@ If you're on this page, then I probably shared the link with you directly to pro
 
 > **TL;DR:** I'm a highly technical product / engineering leader, company operator, and former founder with multiple exits. I also have an academic background in ML / AI, and I'm as comfortable running large data science teams as I am leading sizable product / engineering organizations (100+).  I have almost 25 years of experience building products, teams, and companies from the ground up - often starting as the first person within a team or focus area.  My more recent work history and social links can be found [here](/).
 
-My ⚡superpower⚡ is that I can blend strong technical skills (engineering, product, and data science) with business operational experience ([GTM](https://en.wikipedia.org/wiki/Go-to-market_strategy), managing large teams, creating/fixing complex business processes, sales/marketing strategy, etc.).
+My ⚡superpower⚡ is that I can blend strong technical skills (engineering, product, and data science) with business operational experience ([GTM](https://en.wikipedia.org/wiki/Go-to-market_strategy), managing large teams, creating/optimizing complex business processes, sales/marketing strategy, etc.).
 
 {{< social align=center >}}
 
