@@ -67,5 +67,5 @@ params:
       title: Profile on LinkedIn
       url: "https://www.linkedin.com/in/bamuller/"
     - name: googlescholar
-      title: Profile on LinkedIn
+      title: Profile on Google Scholar
       url: "https://scholar.google.com/citations?user=xMH2gUMAAAAJ&hl=en"
