@@ -3,7 +3,7 @@ title: It's Muller Time
 layout: single
 hideMeta: true
 ---
-My name is Brian Muller, and I'm an operator, [investor](/investor), and founder with two exits.
+My name is Brian Muller, and I'm an operator, [investor](/investing), and founder with two exits.
 
 💻 Most recently, I was the CTO and Co-founder of {{< badgelink url=https://parallelmarkets.com img=parallel.png >}}Parallel Markets{{< /badgelink >}} which provided portable investor identity and accreditation services to make investing online easier. Parallel Markets was [acquired by iCapital](https://www.businesswire.com/news/home/20250115839401/en/iCapital%C2%AE-to-Acquire-Parallel-Markets-to-Streamline-Digital-Identity-Investment-Onboarding-and-Compliance-Verification) in early 2025.
 
@@ -11,7 +11,7 @@ My name is Brian Muller, and I'm an operator, [investor](/investor), and founder
 
 📈 Before that, I was CTO and Co-founder of {{< badgelink url=https://www.crunchbase.com/organization/opbandit img=opbandit.jpg >}}OpBandit{{< /badgelink >}}, which optimized content on major publishers' sites across 7 countries.  OpBandit was [acquired by Vox Media](http://www.ft.com/intl/cms/s/0/fa3f68a0-d957-11e4-a8f1-00144feab7de.html) in April of 2015.
 
-🎟️  Prior to that, I ran the Data Science, Data Products, and Data Infrastructure teams at {{< badgelink url=https://livingsocial.com img=livingsocial.jpg >}}LivingSocial{{< /badgelink >}} in Washington, DC.
+🎟️  Prior to that, I ran the Data Science, Data Products, and Data Infrastructure teams at {{< badgelink url=https://livingsocial.com img=livingsocial.jpg >}}LivingSocial{{< /badgelink >}} in Washington, DC.  I was one of the first engineers to join the company (before then starting/leading the various data teams) and saw the company grow from a small startup to one of the first and biggest unicorns of its day.
 
 🇺🇸 Before that I worked as the the Web Director for {{< badgelink url=https://foreignpolicy.com img=foreignpolicy.jpg >}}Foreign Policy Magazine{{< /badgelink >}} in Washington, DC.
 
