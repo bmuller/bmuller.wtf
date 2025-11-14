@@ -39,6 +39,11 @@ params:
       logo: muse.svg
       type: advisory
       desc: Muse makes it easy to create ecommerce and content websites.
+    - name: Ava
+      url: https://muse.io
+      logo: hi-ava.jpg
+      type: advisory
+      desc: Ava is an AI-powered household concierge.
     - name: "@hotel"
       url: https://athotel.com
       logo: athotel.jpg

@@ -5,7 +5,9 @@ hideMeta: true
 ---
 My name is Brian Muller, and I'm an operator, [investor](/investing), and founder with two exits.
 
-💻 Most recently, I was the CTO and Co-founder of {{< badgelink url=https://parallelmarkets.com img=parallel.png >}}Parallel Markets{{< /badgelink >}} which provided portable investor identity and accreditation services to make investing online easier. Parallel Markets was [acquired by iCapital](https://www.businesswire.com/news/home/20250115839401/en/iCapital%C2%AE-to-Acquire-Parallel-Markets-to-Streamline-Digital-Identity-Investment-Onboarding-and-Compliance-Verification) in early 2025.
+🕵️  I'm currently the Co-founder and CTO of a fintech company currently in stealth mode.
+
+💻 Earlier, I was the CTO and Co-founder of {{< badgelink url=https://parallelmarkets.com img=parallel.png >}}Parallel Markets{{< /badgelink >}} which provided portable investor identity and accreditation services to make investing online easier. Parallel Markets was [acquired by iCapital](https://www.businesswire.com/news/home/20250115839401/en/iCapital%C2%AE-to-Acquire-Parallel-Markets-to-Streamline-Digital-Identity-Investment-Onboarding-and-Compliance-Verification) in early 2025.
 
 📰 Before that, I was the VP of Data and Growth at the magazine {{< badgelink url=https://theatlantic.com img=atlantic.jpg >}}The Atlantic{{< /badgelink >}}, and prior to that I was the Director of Data Science at {{< badgelink url=https://voxmedia.com img=vox.jpg >}}Vox Media{{< /badgelink >}}. At both publications I founded, grew, and led the Data Science and Data Infrastructure teams.
 

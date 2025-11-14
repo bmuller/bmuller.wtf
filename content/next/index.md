@@ -1,4 +1,5 @@
 ---
+draft: true
 title: What Next
 sitemap:
   disable: true
