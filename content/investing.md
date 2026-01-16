@@ -54,6 +54,7 @@ params:
       logo: augie.png
       type: advisory
       desc: AugX Labs is an all-in-one video studio that empowers anyone to create video at scale.
+      exit: https://jwx.com/news/jwx-augie-acquisition
     - name: Union Square Ventures
       url: https://usv.com
       logo: usv.jpg
