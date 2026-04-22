@@ -5,7 +5,7 @@ hideMeta: true
 ---
 My name is Brian Muller, and I'm an operator, [investor](/investing), and founder with two exits.
 
-🕵️  I'm currently the Co-founder and CTO of a fintech company currently in stealth mode.
+I'm currently the Co-founder and CTO of a {{< badgelink url=https://brillian.co img=brillian.png >}}Brillian{{< /badgelink >}}, a fintech company serving the Fortune 5 Million.
 
 💻 Earlier, I was the CTO and Co-founder of {{< badgelink url=https://parallelmarkets.com img=parallel.png >}}Parallel Markets{{< /badgelink >}} which provided portable investor identity and accreditation services to make investing online easier. Parallel Markets was [acquired by iCapital](https://www.businesswire.com/news/home/20250115839401/en/iCapital%C2%AE-to-Acquire-Parallel-Markets-to-Streamline-Digital-Identity-Investment-Onboarding-and-Compliance-Verification) in early 2025.
 
