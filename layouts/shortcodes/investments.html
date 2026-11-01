@@ -1,20 +1,17 @@
 <div class="investments-container">
-  {{ range (where .Page.Params.investments "type" .Params.type) }}
+  {{- range (where .Page.Params.investments "type" .Params.type) }}
   <div class="investment {{ if .defunct }}defunct-investment{{ end }}">
     <div class="investment-logo">
-      <img src="/logos/{{ .logo }}" />
+      <img src="/logos/{{ .logo }}" alt="{{ .name }} logo" loading="lazy" />
     </div>
-    <h3><a target="_BLANK" href="{{ .url }}" target="_BLANK">{{ .name }}</a></h3>
-    <div>
-      {{ .desc }}
-    </div>  
-    {{ if .exit }}
-    <div class="exit">
-      <span>
-        <a href="{{ .exit }}">🚀 Exit</a>
-      </span>
+    <h3><a href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a></h3>
+    {{- with .desc }}
+    <div class="investment-desc">{{ . }}</div>
+    {{- end }}
+    <div class="investment-badges">
+      {{- with .exit }}<a class="investment-badge exit" href="{{ . }}" target="_blank" rel="noopener">🚀 Exit</a>{{ end -}}
+      {{- if .defunct }}<span class="investment-badge defunct">Wound Down</span>{{ end -}}
     </div>
-    {{ end }}
   </div>
-{{ end }}
+  {{- end }}
 </div>

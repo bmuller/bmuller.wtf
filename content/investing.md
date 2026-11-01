@@ -50,7 +50,7 @@ params:
       type: advisory
       desc: "@hotel is a social travel agency with a community of over 70M people."
     - name: AugX Labs
-      url: https://augie.studio
+      url: https://www.linkedin.com/company/augiestudio
       logo: augie.png
       type: advisory
       desc: AugX Labs is an all-in-one video studio that empowers anyone to create video at scale.

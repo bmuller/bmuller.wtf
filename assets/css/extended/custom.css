@@ -1,95 +1,601 @@
+/* ---------- Base ---------- */
+
+body,
+.list,
+[data-theme="dark"] .list {
+    background:
+        radial-gradient(ellipse 70rem 28rem at 50% -8rem, var(--accent-glow), transparent 70%) no-repeat,
+        var(--theme) !important;
+}
+
 body {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    background: var(--theme) !important;
+    font-family: var(--font-sans);
+    font-feature-settings: "cv11", "ss01";
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4 {
-    font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-sans);
     font-weight: 700;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
+    letter-spacing: -0.02em;
+    color: var(--primary);
 }
 
-.post-content a:hover, div.social-icons a {
-    box-shadow: none;
+code, pre, kbd {
+    font-family: var(--font-mono);
 }
 
-.post-content ul {
-    margin-left: 10px;
+::selection {
+    background: var(--accent-soft);
 }
 
-div.social-icons a:hover {
-    box-shadow: 0 1px;
-}
-
-div.post-meta span.lastmod, footer.entry-footer span.lastmod {
-    color: #aaa;
-}
-
-div.post-content a.badgelink {
-    border: 1px solid var(--tertiary);
-    padding: 1px 4px 1px 4px;
-    align-items: center;
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
     border-radius: 4px;
-    box-shadow: none;
 }
 
-div.post-content a.badgelink:hover {
-    border: 1px solid var(--theme);
+/* ---------- Header / nav ---------- */
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: color-mix(in srgb, var(--theme) 80%, transparent);
+    backdrop-filter: saturate(180%) blur(12px);
+    -webkit-backdrop-filter: saturate(180%) blur(12px);
+    border-bottom: 1px solid var(--border);
 }
 
-div.post-content a.badgelink img {
-    display: inline-flex;
-    height: auto;
-    margin: 0 4px 0 0;
+.logo a {
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: var(--primary);
 }
 
-div.investments-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.theme-toggle {
+    color: var(--secondary);
+    transition: color 0.15s;
+}
+
+.theme-toggle:hover {
+    color: var(--primary);
+}
+
+.theme-toggle svg {
+    width: 18px;
+    height: 18px;
+}
+
+.menu {
     align-items: center;
-    gap: 20px;
-    padding: 20px;
-    align-items: flex-start;
+    column-gap: 4px;
 }
 
-div.investments-container div.investment {
-    flex: 1 1 300px;
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
+.menu a {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.menu a span {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 12px;
+    border-radius: 999px;
+    color: var(--secondary);
+    transition: color 0.15s, background-color 0.15s;
+}
+
+.menu a:hover span {
+    color: var(--primary);
+    background: var(--tertiary);
+}
+
+.menu .active {
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--accent);
+    background: var(--accent-soft);
+}
+
+.menu svg {
+    width: 15px;
+    height: 15px;
+}
+
+/* ---------- Page headers ---------- */
+
+.main {
+    padding-top: calc(var(--gap) * 2);
+}
+
+.page-header,
+.post-header {
+    margin: 0 auto var(--content-gap) auto;
+}
+
+.page-header h1,
+.post-title {
+    font-size: clamp(32px, 5vw, 44px);
+    line-height: 1.15;
+    letter-spacing: -0.035em;
+    font-weight: 800;
+}
+
+.post-description {
+    color: var(--secondary);
+    font-size: 18px;
+}
+
+.post-meta {
+    margin-top: 12px;
+}
+
+.post-meta,
+.entry-footer,
+.breadcrumbs {
+    font-size: 14px;
+    color: var(--secondary);
+}
+
+.post-meta span.lastmod,
+.entry-footer span.lastmod {
+    color: var(--secondary);
+    opacity: 0.75;
+}
+
+/* ---------- Content ---------- */
+
+.post-content {
+    color: var(--content);
+    font-size: 17px;
+    line-height: 1.75;
+}
+
+.post-content h2 {
+    font-size: 28px;
+    margin: 48px 0 16px;
+}
+
+.post-content h3 {
+    font-size: 22px;
+    margin: 32px 0 12px;
+}
+
+.post-content a:not(.anchor),
+.toc a:hover {
+    color: var(--accent);
+    box-shadow: none;
+    text-decoration: underline;
+    text-decoration-color: color-mix(in srgb, var(--accent) 35%, transparent);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    transition: color 0.15s, text-decoration-color 0.15s;
+}
+
+.post-content a:not(.anchor):hover {
+    color: var(--accent-hover);
+    box-shadow: none;
+    text-decoration-color: currentColor;
+}
+
+.post-content ul,
+.post-content ol {
+    padding-inline-start: 22px;
+}
+
+.post-content li {
+    margin-bottom: 6px;
+}
+
+.post-content li::marker {
+    color: var(--secondary);
+}
+
+.post-content blockquote {
+    margin: 24px 0;
+    padding: 16px 20px;
+    border-inline-start: 3px solid var(--accent);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    background: var(--accent-soft);
+    color: var(--content);
+}
+
+.post-content blockquote p:last-child {
+    margin-bottom: 0;
+}
+
+.post-content code {
+    font-size: 0.875em;
+    padding: 2px 6px;
+    border-radius: 6px;
+    background: var(--code-bg);
+}
+
+.post-content pre code {
+    font-size: 14px;
+    padding: 16px 20px;
+}
+
+.post-content .highlight,
+.post-content pre,
+.post-content pre code {
+    border-radius: var(--radius-sm);
+}
+
+.post-content img {
+    border-radius: var(--radius-sm);
+}
+
+.post-content hr {
+    margin: 40px 0;
+    background: var(--border);
+}
+
+.post-content table th {
+    color: var(--primary);
+}
+
+.post-content table th,
+.post-content table:not(.highlighttable, .highlight table, .gist .highlight) td {
+    border-bottom: 1px solid var(--border);
+}
+
+.entry-cover img,
+.post-content .entry-cover img {
+    border-radius: var(--radius);
+}
+
+/* ---------- Inline company badges ---------- */
+
+.post-content a.badgelink {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 0 7px 0 3px;
+    line-height: 1.45;
+    font-size: 0.94em;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--entry);
+    color: var(--primary);
+    font-weight: 500;
+    text-decoration: none;
+    white-space: nowrap;
+    vertical-align: 0.05em;
+    transition: border-color 0.15s, background-color 0.15s, color 0.15s;
+}
+
+.post-content a.badgelink:hover {
+    border-color: var(--accent);
+    background: var(--accent-soft);
+    color: var(--primary);
+}
+
+.post-content a.badgelink img {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    border-radius: 999px;
+    object-fit: cover;
+}
+
+/* ---------- List entries (blog, tags) ---------- */
+
+.post-entry {
+    padding: 22px 24px;
+    margin-bottom: 16px;
+    background: var(--entry);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    transition: border-color 0.15s, box-shadow 0.2s, transform 0.2s;
+}
+
+.post-entry:hover {
+    border-color: color-mix(in srgb, var(--accent) 45%, var(--border));
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-1px);
+}
+
+.post-entry:active {
+    transform: none;
+}
+
+.entry-header h2 {
+    font-size: 21px;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+    transition: color 0.15s;
+}
+
+.post-entry:hover .entry-header h2 {
+    color: var(--accent);
+}
+
+.entry-content {
+    color: var(--secondary);
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 6px 0 10px;
+}
+
+.entry-footer {
+    font-size: 13px;
+}
+
+.pagination a {
+    background: var(--entry);
+    color: var(--primary);
+    border: 1px solid var(--border);
+    font-weight: 500;
+}
+
+.pagination a:hover {
+    border-color: var(--accent);
+}
+
+/* ---------- Tags & post nav ---------- */
+
+.post-footer {
+    margin-top: 48px;
+}
+
+.post-tags a,
+.terms-tags a {
+    background: var(--entry);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    color: var(--secondary);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 30px;
+    padding: 0 12px;
+    transition: border-color 0.15s, color 0.15s;
+}
+
+.post-tags a:hover,
+.terms-tags a:hover {
+    background: var(--entry);
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.paginav {
+    background: var(--entry);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+
+.paginav a:hover {
+    color: var(--accent);
+}
+
+/* ---------- Search ---------- */
+
+#searchbox input {
+    padding: 12px 16px;
+    font-size: 16px;
+    background: var(--entry);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+#searchbox input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-soft);
+}
+
+#searchResults li {
+    border-radius: var(--radius-sm);
     border: 1px solid var(--border);
     background: var(--entry);
 }
 
-div.investments-container div.defunct-investment {
-    background: inherit;
+#searchResults .focus {
+    border-color: var(--accent);
+    transform: none;
 }
 
-div.investments-container div.investment div.exit span a {
-    color: rgba(219, 31, 72, 0.88);
-    font-size: 1.2em;
+/* ---------- Social icons ---------- */
+
+.social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 40px;
+}
+
+.social-icons[align="center"] {
+    justify-content: center;
+}
+
+.post-content .social-icons a,
+.social-icons a {
+    padding: 10px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--entry);
+    color: var(--secondary);
+    box-shadow: none;
+    text-decoration: none;
+    transition: color 0.15s, border-color 0.15s, transform 0.15s;
+}
+
+.post-content .social-icons a:hover,
+.social-icons a:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+    box-shadow: none;
+    transform: translateY(-1px);
+}
+
+.social-icons a svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* ---------- Investments ---------- */
+
+.post-content div.investments-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 16px;
+    margin: 24px 0 8px;
+}
+
+.post-content div.investment {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 20px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--entry);
+    box-shadow: var(--shadow);
+    transition: border-color 0.15s, box-shadow 0.2s, transform 0.2s;
+}
+
+.post-content div.investment:hover {
+    border-color: color-mix(in srgb, var(--accent) 45%, var(--border));
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-1px);
+}
+
+.post-content div.investment .investment-logo img {
+    width: 44px;
+    height: 44px;
+    margin: 0 0 8px;
+    object-fit: contain;
+    border-radius: 10px;
+    background: #fff;
+    border: 1px solid var(--border);
+}
+
+.post-content div.investment h3 {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.3;
+}
+
+.post-content div.investment h3 a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+/* Make the whole card clickable */
+.post-content div.investment h3 a::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: var(--radius);
+}
+
+.post-content div.investment:hover h3 a {
+    color: var(--accent);
+}
+
+.post-content div.investment .investment-desc {
+    color: var(--secondary);
+    font-size: 14px;
+    line-height: 1.55;
+}
+
+.post-content div.investment .investment-badges {
+    display: flex;
+    gap: 6px;
+    margin-top: auto;
+    padding-top: 8px;
+}
+
+.post-content div.investment .investment-badges:empty {
+    display: none;
+}
+
+.post-content .investment-badge {
+    position: relative;
+    z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.6;
+    text-decoration: none;
+}
+
+.post-content a.investment-badge.exit {
+    color: var(--success);
+    background: var(--success-soft);
+    text-decoration: none;
+}
+
+.post-content a.investment-badge.exit:hover {
+    color: var(--success);
+    box-shadow: inset 0 0 0 1px var(--success);
+}
+
+.post-content .investment-badge.defunct {
+    color: var(--secondary);
+    background: var(--tertiary);
+}
+
+.post-content div.defunct-investment {
+    background: transparent;
+    border-style: dashed;
     box-shadow: none;
 }
 
-div.investments-container div.investment div.exit span a:hover {
-    box-shadow: 0 1px;
+.post-content div.defunct-investment .investment-logo img {
+    filter: grayscale(1);
+    opacity: 0.7;
 }
 
-div.investments-container div.investment div.exit {
-    margin-top: 30px;
+/* ---------- Footer ---------- */
+
+.top-link {
+    background: var(--entry);
+    border: 1px solid var(--border);
+    color: var(--secondary);
 }
 
-div.investment div.investment-logo {
-    width: 100%;
+@media (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+
+    .post-content {
+        font-size: 16px;
+    }
+
+    .menu a span {
+        padding: 8px 10px;
+    }
+
+    .post-content div.investments-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .post-content div.investment {
+        padding: 16px;
+    }
 }
 
-div.investment div.investment-logo img {
-    width: 60px;
-    margin: auto;    
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+    }
 }

@@ -1,5 +1,5 @@
 baseURL: https://bmuller.wtf/
-languageCode: en-us
+locale: en-us
 title: bmuller wtf
 theme: ["PaperMod"]
 enableRobotsTXT: true
@@ -37,8 +37,9 @@ menu:
     url: /blog/
     weight: 30
   - identifier: search
-    name: 🔎
+    name: Search
     url: /search
+    pre: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>'
     weight: 40
 
 params:

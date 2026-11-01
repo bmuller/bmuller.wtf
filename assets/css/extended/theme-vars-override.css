@@ -1,34 +1,52 @@
 :root {
-    --primary: rgba(76, 123, 150, 0.88);
-    --entry: #e5ddc8;
+    --gap: 24px;
+    --content-gap: 24px;
+    --nav-width: 960px;
+    --main-width: 720px;
+    --header-height: 64px;
+    --radius: 12px;
+    --radius-sm: 8px;
+
+    --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+    --theme: #fcfcfd;
+    --entry: #ffffff;
+    --primary: #0f1117;
+    --secondary: #5c6272;
+    --tertiary: #eef0f5;
+    --content: #272b35;
+    --border: #e5e7ee;
+    --code-block-bg: #12141b;
+    --code-bg: #f1f2f7;
+
+    --accent: #5b5bd6;
+    --accent-hover: #4646c0;
+    --accent-soft: rgba(91, 91, 214, 0.09);
+    --accent-glow: rgba(124, 108, 255, 0.14);
+    --success: #0b8f63;
+    --success-soft: rgba(11, 143, 99, 0.1);
+    --shadow: 0 1px 2px rgba(15, 17, 23, 0.04), 0 2px 8px rgba(15, 17, 23, 0.04);
+    --shadow-hover: 0 4px 12px rgba(91, 91, 214, 0.08), 0 12px 32px rgba(15, 17, 23, 0.06);
 }
 
-.dark {
-    --primary: rgba(76, 123, 150, 0.88);
-}
+:root[data-theme="dark"] {
+    --theme: #0b0c10;
+    --entry: #13151b;
+    --primary: #f3f4f8;
+    --secondary: #9a9fad;
+    --tertiary: #22252e;
+    --content: #d0d3dc;
+    --border: #23262f;
+    --code-block-bg: #13151b;
+    --code-bg: #1d2029;
 
-/*
-:root {
-    --theme: #fff;
-    --entry: #cfcfff;
-    --primary: rgba(0, 0, 106, 0.88);
-    --secondary: rgba(0, 0, 80, 0.78);
-    --tertiary: rgba(0, 0, 106, 0.16);
-    --content: rgba(0, 0, 60, 0.88);
-    --hljs-bg: #1c1d21;
-    --code-bg: #f5f5f5;
-    --border: #eee;
+    --accent: #a4a6ff;
+    --accent-hover: #c3c4ff;
+    --accent-soft: rgba(164, 166, 255, 0.12);
+    --accent-glow: rgba(124, 108, 255, 0.16);
+    --success: #34d399;
+    --success-soft: rgba(52, 211, 153, 0.12);
+    --shadow: none;
+    --shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(164, 166, 255, 0.08);
 }
-
-.dark {
-    --theme: #101c7a;
-    --entry: #202062;
-    --primary: rgba(235, 235, 255, 0.96);
-    --secondary: rgba(235, 235, 255, 0.66);
-    --tertiary: rgba(1, 1, 5, 0.32);
-    --content: rgba(235, 235, 255, 0.82);
-    --hljs-bg: #2e2e33;
-    --code-bg: #37383e;
-    --border: #446;
-}
-*/
