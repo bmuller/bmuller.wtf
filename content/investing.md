@@ -12,8 +12,13 @@ params:
       logo: poppy.png
       type: direct-secondary
       desc: Poppy provides flowers for the big day, or just every day.
+    - name: Editframe
+      url: https://editframe.com
+      logo: editframe.jpg
+      type: direct-secondary
+      desc: Video platform for AI workloads.
     - name: Big Sugar Podcast
-      url: https://podcasts.apple.com/us/podcast/big-sugar/id1707777341
+      url: https://open.spotify.com/show/2FB73NicPHRhHMKDwvq7D5
       logo: big-sugar.jpg
       type: direct-secondary
       desc: A podcast that explores the secretive, multi-billion dollar sugar industry.
